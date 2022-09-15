@@ -18,7 +18,7 @@ const Design = () => {
           title='Personal Website' 
           text='The website you are on right now made with React, Framer Motion, various Javascript Libraries. It was made to document the three sides of William (the globetrotter, the explorer, and the painter). '/>
         <div className="william__design-buttons">
-          <a href="https://github.com/wp4032/personal-website">  <button className="william__design-linkedbutton"> GitHub </button>  </a>
+          <a href="https://github.com/wp4032/william-website">  <button className="william__design-linkedbutton"> GitHub </button>  </a>
         </div>
       </div>
 
