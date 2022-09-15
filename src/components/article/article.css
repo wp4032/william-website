@@ -1,0 +1,40 @@
+.william__blog-container_article {
+  display: column;
+  width: 100%;
+  border: solid 1px rgb(255,255,255,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.william__blog-container_header {
+  height: 20px;
+  background-color: aqua;
+}
+
+.william__blog-container_article-content {
+  margin: 1rem;
+}
+
+.william__blog-container_article-content p {
+  font-family: var(--font-family);
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  align-items: center;
+  margin-top: 1rem;
+  color: #b5b5b5;
+}
+
+.william__blog-container_article-content h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  align-items: center;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}

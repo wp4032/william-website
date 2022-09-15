@@ -1,0 +1,15 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+    --font-family: 'Inter', sans-serif;
+
+    --gradient-text: linear-gradient(10deg, rgba(156, 105, 163, 1) 0%, rgba(245, 199, 199, 0.79) 100%);
+    --gradient-bar: linear-gradient(89.75deg, #C07EC9 7.27%, rgba(245, 199, 199, 0.79) 84.44%);
+    --black-text: rgba(0,0,0,1);
+
+    --color-bg: rgba(0,0,0,1);
+    --color-footer: rgba(0,0,0,1);
+    --color-blog: rgba(0,183,255,1);
+    --color-text: rgba(102,9,121,1);
+    --color-subtext: rgba(36,0,29,1);
+}

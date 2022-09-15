@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.section__padding {
+  padding: 4rem 6rem 0rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7.5px;
+  height: 7.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsla(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: hsla(100,100,100,0.75); */
+  background: #aaa;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem 4rem 0 4rem;
+  }
+
+  .section__margin {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .section__margin {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .section__padding {
+    padding-top: 4rem;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .section__padding {
+    padding-top: 4rem;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
