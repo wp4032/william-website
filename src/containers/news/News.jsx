@@ -47,6 +47,23 @@ const News = () => {
             // dragConstraints={{ right: 0, left: -width }} 
             className='william__news-inner-carousel'>
             
+            {/* iCLIP */}
+            <motion.div className='william__news-item'>
+              <div className="william__blog-container_article">
+                <div className="william__blog-container_header colornews11" />
+                <div className="william__blog-container_article-content">
+                  <div>
+                    <p>September 28, 2022</p>
+                    <h3>Injection Continuous Liquid Interface Production Published in Science Advances</h3>
+                  </div>
+                  <div className="spacer"/>
+                  <div>
+                    <p>The paper "Injection Continuous Liquid Interface Production of 3D objects" is published in Science Advances. William is a co-author on the paper and his photo of Kyiv’s Saint Sophia Cathedral is on the cover of the journal.</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            
             {/* Wu Tsai Poster Session */}
             <motion.div className='william__news-item'>
               <div className="william__blog-container_article">

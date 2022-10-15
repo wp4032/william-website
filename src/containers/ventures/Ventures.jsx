@@ -3,7 +3,7 @@ import './ventures.css';
 import { Feature, ShowcasePopup } from '../../components'
 import hh20recap from '../../assets/healthhacks2020-recap.pdf';
 import hh21recap from '../../assets/healthhacks2021-recap.pdf';
-import hh22recap from '../../assets/healthhacks2022-recap.jpg';
+import hh22recap from '../../assets/healthhacks2022-recap.pdf';
 
 
 const Ventures = () => {
@@ -23,8 +23,8 @@ const Ventures = () => {
         <div className="william__ventures-buttons">
           <ShowcasePopup 
             buttonText='health{hacks} 2022' 
-            img={hh22recap} 
-            alt='health{hacks} 2022'/>
+            pdf={hh22recap} 
+            alt="health{hacks} 2022"/>
           <ShowcasePopup 
             buttonText='health{hacks} 2021' 
             pdf={hh21recap} 

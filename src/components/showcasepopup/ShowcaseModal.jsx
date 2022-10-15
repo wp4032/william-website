@@ -27,7 +27,7 @@ const dropIn = {
 
 const ShowcaseModal = ({ handleClose, alt, img, pdf, mp4 }) => {
 
-  const ImageComponent = ({ src }, { alt }) => {
+  const ImageComponent = ({ img }, { alt }) => {
     const image = useRef(null);
     const [valid, setValid] = useState(true);
 
@@ -38,7 +38,7 @@ const ShowcaseModal = ({ handleClose, alt, img, pdf, mp4 }) => {
     if (valid) {
       return (
         <img
-          src={src}
+          src={img}
           onLoad={checkValid}
           onError={() => setValid(false)}
           ref={image}
@@ -67,6 +67,7 @@ const ShowcaseModal = ({ handleClose, alt, img, pdf, mp4 }) => {
           className="william__showcase-modal-document"
           data={doc}
           onLoad={checkValid}
+          onError={() => setValid(false)}
           type="application/pdf"
           width="100%"
           height="100%">
@@ -85,7 +86,7 @@ const ShowcaseModal = ({ handleClose, alt, img, pdf, mp4 }) => {
     const [valid, setValid] = useState(true);
 
     const checkValid = () => {
-      if (!vid.current.complete) setValid(false);
+      if ({video} === {} ) setValid(false);
     }
 
     if (valid) {
@@ -95,13 +96,14 @@ const ShowcaseModal = ({ handleClose, alt, img, pdf, mp4 }) => {
           width="100%"
           height="100%"
           onLoad={checkValid}
+          ref={vid}
           controls>
           <source src={video} type="video/mp4" />
         </video>
       );
     }
 
-    return <div><p>Link <a href={video}>to the video!</a></p></div>;
+    return <div>Video not valid</div>;
   };
 
 

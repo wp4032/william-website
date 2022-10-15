@@ -5,6 +5,8 @@ import KLAPposter from '../../assets/KLAPposter.pdf';
 import HOAposter from '../../assets/HOAposter.pdf';
 import HOApaper from '../../assets/HOApaper.pdf';
 import MIXERposter from '../../assets/MIXERposter.pdf';
+import iCLIPpaper from '../../assets/ICLIPpaper.pdf';
+import iCLIPcover from '../../assets/ICLIPcover.pdf'
 
 
 const Science = () => {
@@ -34,9 +36,15 @@ const Science = () => {
           position='Undergraduate Research Assistant @ Stanford University DeSimone Lab' 
           text='Injection continuous liquid interface production accelerates 3D printing speeds 5 to 10-fold over current methods, can utilize more viscous resins, and can readily pattern an object with different resins.'/>
         <div className="william__science-buttons">
+          <a href="https://www.science.org/doi/full/10.1126/sciadv.abq3917/">  <button className="william__science-linkedbutton"> Paper </button>  </a>
           <ShowcasePopup 
-            buttonText='Paper' 
-            text='Coming soon! In publication :)' />
+            buttonText='PDF' 
+            pdf={iCLIPpaper} />
+          <ShowcasePopup 
+            buttonText='Cover' 
+            pdf={iCLIPcover} />
+          <a href="https://systemx.stanford.edu/news/2022-09-28-000000/new-3d-printing-method-designed-stanford-engineers-promises-faster-printing">  <button className="william__science-linkedbutton"> Stanford Engineering Press </button>  </a>
+          <a href="https://3dprintingindustry.com/news/new-take-on-carbon-clip-3d-printing-could-be-five-to-ten-times-faster-215224/">  <button className="william__science-linkedbutton"> 3D Printing Industry Press </button>  </a>
         </div>
       </div>
 
