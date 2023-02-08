@@ -18,7 +18,7 @@ const Ventures = () => {
       <div>
         <Feature 
           title='health{hacks} Hackathon' 
-          position='Co-Founder & Advisor' 
+          position='Co-Founder & Chief Executive Officer' 
           text='health{hacks} is a 48 hour healthcare innovation event dedicated to connecting people from around the world to change the world. Our goal is to bring people from a wide variety of backgrounds and fields to provide new perspectives and collaborate on projects.' link='https://health-hacks.tech/'/>
         <div className="william__ventures-buttons">
           <ShowcasePopup 
@@ -33,19 +33,14 @@ const Ventures = () => {
             buttonText='health{hacks} 2020' 
             pdf={hh20recap} 
             alt='health{hacks} 2021'/> 
-          <a href="https://health-hacks.tech/">  <button className="william__ventures-linkedbutton"> Website </button>  </a>
+          <a href="https://joinhealthhacks.com/">  <button className="william__ventures-linkedbutton"> Website </button>  </a>
           <a href="https://www.instagram.com/healthhacks.tech/?hl=en">  <button className="william__ventures-linkedbutton"> Instagram </button>  </a>
+          <a href="https://twitter.com/joinhealthhacks">  <button className="william__ventures-linkedbutton"> Twitter </button>  </a>
         </div>
       </div>
       <div>
         <Feature 
-          title='health{hacks} Ventures' 
-          position='Co-Founder' 
-          text='Coming soon...' />
-      </div>
-      <div>
-        <Feature 
-          title='Parrot' 
+          title='health{hacks} Continuation Program' 
           position='Co-Founder' 
           text='Coming soon...' />
       </div>

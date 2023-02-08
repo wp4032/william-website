@@ -89,23 +89,21 @@ const Skills = () => {
           <h1> People who inspire William</h1>
           <div className="william__inspirations-people_container">
             <p>Alexandr Wang</p>
-            <p>Ben Gilbert</p>
             <p>Bon Iver</p>
-            <p>David Rosenthal</p>
-            <p>Don Valentine</p>
             <p>Elon Musk</p>
             <p>Esteban Ocon</p>
             <p>Frank Ocean</p>
-            <p>Kanye West</p>
             <p>Kendrick Lamar</p>
+            <p>Keith Rabois</p>
             <p>Hyunwoo Yuk</p>
             <p>Jamie XX</p>
             <p>Jen Hsun Huang</p>
             <p>Joseph DeSimone</p>
+            <p>Josh Wolfe</p>
             <p>Krishna Shenoy</p>
             <p>Marc Andreesen</p>
             <p>Max Verstappen</p>
-            <p>Patrick O'Shaughnessy</p>
+            <p>Morris Chang</p>
             <p>Ravi Gupta</p>
             <p>Tony Fadell</p>
             <p>Tyler, the Creator</p>

@@ -55,7 +55,7 @@ const Science = () => {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <Feature 
           title='Herringbone Microfluidic Mixer' 
           position='Research Intern @ USC SHINE & USC Laboratory of Living Systems Engineering' 
@@ -65,7 +65,7 @@ const Science = () => {
             buttonText='Poster' 
             pdf={MIXERposter} />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
