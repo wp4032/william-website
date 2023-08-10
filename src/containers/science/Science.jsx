@@ -18,6 +18,21 @@ const Science = () => {
 
       <div>
         <Feature 
+          title='TBD' 
+          position='Undergraduate Research Assistant @ Stanford University DeSimone Lab' 
+          text='Coming soon...' />
+      </div>
+
+      <div>
+        <Feature 
+          title='Moonwalker Brain Computer Interface' 
+          position='CS 107E Final Project @ Stanford University' 
+          text='Inspired by CTRL Labs, Moonwalker reads EMG signals from the wrist to allow for seamless interaction between the real and digital world. Truly fullstack (designed wrist band, circuitry, backend control, frontend software).' />
+          <a href="https://github.com/wp4032/cs107e-final-project/tree/master">  <button className="william__ventures-linkedbutton"> Github </button>  </a>
+      </div>
+
+      <div>
+        <Feature 
           title='Kinesthetic Lattice Programmable (KLaP) Tape' 
           position='Undergraduate Research Fellow @ Stanford University Wu Tsai Human Performance Alliance & DeSimone Lab' 
           text='Kinesthetic latticed programmable (KLaP) tape aims to solve patellofemoral pain through its customized and programmable mechanical properties and robust adhesion with triggerable on-demand detachment for after use.' />
@@ -36,7 +51,7 @@ const Science = () => {
         <div className="william__science-buttons">
           <ShowcasePopup 
             buttonText='Paper' 
-            text='Coming soon! In publication :)' />
+            pdf={KLAPposter}/>
         </div>
       </div>
 

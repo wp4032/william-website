@@ -3,6 +3,7 @@ import './design.css';
 import { Feature, ShowcasePopup } from '../../components'
 import DDDZine from '../../assets/DreamsDontDie.pdf';
 import DDDBike from '../../assets/DreamsDontDieBike.mp4';
+import Coinception from '../../assets/coinception.pdf';
 
 const Design = () => {
   return (
@@ -11,6 +12,19 @@ const Design = () => {
       <div className="william__design-title">
         <h1>Design</h1>
         <h2>Magazines, photographs, designs by William Pan</h2>
+      </div>
+
+      <div>
+        <Feature 
+          title='Coinception' 
+          position={'ME 102 Final Project @ Stanford University'}
+          text='A coin sorter that requires 3 inches of vertical input motion that is reset by a spring. The input motion is further translated into rotational motion to sort the coins into sorted compartments.'/>
+        <div className="william__design-buttons">
+          <ShowcasePopup 
+            buttonText='Presentation' 
+            pdf={Coinception} 
+            alt='Coinception'/>
+        </div>
       </div>
 
       <div>
