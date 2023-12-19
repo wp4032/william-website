@@ -18,8 +18,9 @@ const Ventures = () => {
       </div>
       <div>
         <Feature 
-          title='Enginuity' 
-          position='Coming soon...'  />
+          title='TUNL Company' 
+          position='The Wright Brothers of Ground Breaking Technology'
+          text='Coming soon ...'  />
       </div>
       <div>
         <Feature 

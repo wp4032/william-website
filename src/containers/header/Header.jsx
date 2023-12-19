@@ -73,7 +73,7 @@ const Header = () => {
         <div className="william__header-content">
           <div className="william__header-content-title">
             <h1 className="black-text"> The intersection of innovation, entreprenuership, engineering, and design. </h1>
-            <p> William Pan is a sophomore at Stanford University studying mechanical engineering, computer science, and chemistry. His goal in life is to change the world through translational medical technologies and purposeful ventures. </p>
+            <p> William Pan is a junior at Stanford University studying mechanical engineering, electrical engineering, and computer science. His goal in life is to change the world through science-based technologies and purposeful ventures. </p>
             <ContactForm />
           </div>
 
