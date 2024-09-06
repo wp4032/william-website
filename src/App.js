@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Skills, Spotify } from './components';
-import { Footer, Header, News } from './containers';
+import { Footer, Header } from './containers';
 import './App.css';
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
         <Header />
         <Skills />
         <Spotify />
-        <News />
+        {/* <News /> */}
         <Footer />
     </div>
   )

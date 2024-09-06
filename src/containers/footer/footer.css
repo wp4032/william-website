@@ -194,6 +194,10 @@
     font-size: 26px;
   }
 
+  .william__footer-links p {
+    font-size: 12px;
+  }
+
   .william__footer-content__input input {
     font-size: 12px;
     min-height: 30px;

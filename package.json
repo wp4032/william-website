@@ -10,6 +10,8 @@
     "animejs": "^3.2.1",
     "axios": "^0.27.2",
     "buffer": "^6.0.3",
+    "countapi": "^1.0.0",
+    "counterapi": "^1.79.0",
     "framer-motion": "^7.2.1",
     "fs": "^0.0.1-security",
     "react": "^18.2.0",

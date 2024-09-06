@@ -1,42 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import './skills.css';
-import {
-  photoshop,
-  lightroom,
-  illustrator,
-  indesign,
-  premiere,
-  python,
-  cplusplus,
-  css,
-  html,
-  javascript,
-  latex,
-  numpy,
-  opencv,
-  electron,
-  react,
-  solidworks,
-  matlab,
-  ntopology
-} from './imports.js';
-import axios from 'axios';
-
-const countAPI = process.env.REACT_APP_COUNT_API;
-console.log(countAPI);
-const COUNT_ENDPOINT = "https://api.countapi.xyz/hit/william-pan.com/" + countAPI;
-console.log(COUNT_ENDPOINT);
+import {CounterAPI} from "counterapi";
 
 const Skills = () => {
+  const counter = new CounterAPI();
+
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    axios.get(COUNT_ENDPOINT)
-      .then(response => {
-        setCount(response.data.value);
+    counter.up("william-pan.com", "views")
+      .then((result) => {
+        setCount(result.Count);
+        console.log(result.Count);
       })
-
-  }, []);
+      .catch((error) => {
+        console.error("Error updating counter:", error);
+      });
+  }, []); // Include `counter` in the dependency array
 
   return (
     <div className="william__misc section__padding">
@@ -47,16 +27,19 @@ const Skills = () => {
             <h2>PROGRAMMING SKILLS</h2>
             <div className="william__skills-logos-container">
               <div className="william__skills-logos">
-                <img src={python} alt="python" />
-                <img src={cplusplus} alt="cplusplus" />
-                <img src={electron} alt="electron" />
-                <img src={react} alt="react" />
-                <img src={css} alt="css" />
-                <img src={html} alt="html" />
-                <img src={javascript} alt="javascript" />
-                <img src={latex} alt="latex" />
-                <img src={numpy} alt="numpy" />
-                <img src={opencv} alt="opencv" />
+                <h3>Python</h3>
+                <h3>C++</h3>
+                <h3>C</h3>
+                <h3>PyTorch</h3>
+                <h3>React</h3>
+                <h3>NextJS</h3>
+                <h3>CSS</h3>
+                <h3>HTML</h3>
+                <h3>JavaScript</h3>
+                <h3>Latex</h3>
+                <h3>Numpy</h3>
+                <h3>OpenCV</h3>
+                <h3>Arm Assembly</h3>
               </div>
             </div>
           </div>
@@ -64,20 +47,39 @@ const Skills = () => {
           <div className="william__skills-container">
             <h2>ENGINEERING SKILLS</h2>
             <div className="william__skills-logos">
-              <img src={solidworks} alt="solidworks" />
-              <img src={matlab} alt="matlab" />
-              <img src={ntopology} alt="ntopology" />
+              <h3>SolidWorks</h3>
+              <h3>Fusion 360 CAD & CAM</h3>
+              <h3>Altium</h3>
+              <h3>MATLAB</h3>
+              <h3>STM32 CubeIDE</h3>
+              <h3>NTopology</h3>
+              <h3>LTSpice</h3>
+              <h3>Electro-mechanical Design</h3>
+              <h3>GD&T</h3>
+              <h3>DFM</h3>
+              <h3>DFA</h3>
+              <h3>Hydraulic Circuits</h3>
+              <h3>Lithium Ion Battery Modules</h3>
+              <h3>Power Electronics</h3>
+              <h3>PCB Design Schematics and Layout</h3>
+              <h3>CAN Bus</h3>
+              <h3>I2C/SPI/UART</h3>
+              <h3>Wire Harnesses</h3>
+              <h3>FDM / SLA 3D Printing</h3>
+              <h3>3-Axis Mill</h3>
+              <h3>3-Axis CNC</h3>
+              <h3>Water Jet</h3>
             </div>
           </div>
 
           <div className="william__skills-container">
             <h2>DESIGN SKILLS</h2>
             <div className="william__skills-logos">
-              <img src={photoshop} alt="photoshop" />
-              <img src={illustrator} alt="illustrator" />
-              <img src={lightroom} alt="lightroom" />
-              <img src={indesign} alt="indesign" />
-              <img src={premiere} alt="premiere" />
+              <h3>Adobe Photoshop</h3>
+              <h3>Adobe Illustrator</h3>
+              <h3>Adobe Lightroom</h3>
+              <h3>Adobe InDesign</h3>
+              <h3>Adobe Premiere Pro</h3>
             </div>
           </div>
         </div>
@@ -96,7 +98,6 @@ const Skills = () => {
             <p>Esteban Ocon</p>
             <p>Frank Ocean</p>
             <p>Kendrick Lamar</p>
-            <p>Keith Rabois</p>
             <p>Hyunwoo Yuk</p>
             <p>Jamie XX</p>
             <p>Jen Hsun Huang</p>

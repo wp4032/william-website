@@ -4,7 +4,8 @@ import { Feature, ShowcasePopup } from '../../components'
 import KLAPposter from '../../assets/KLAPposter.pdf';
 import HOAposter from '../../assets/HOAposter.pdf';
 import HOApaper from '../../assets/HOApaper.pdf';
-import MIXERposter from '../../assets/MIXERposter.pdf';
+import iCLIP1paper from '../../assets/iclippaper1.pdf';
+import iCLIP2paper from '../../assets/iclippaper2.pdf';
 
 
 const Science = () => {
@@ -18,9 +19,14 @@ const Science = () => {
 
       <div>
         <Feature 
-          title='TBD' 
+          title='High-resolution stereolithography: Negative spaces enabled by control of fluid mechanics' 
           position='Undergraduate Research Assistant @ Stanford University DeSimone Lab' 
-          text='Coming soon...' />
+          text='Injection continuous liquid interface production (iCLIP) technology revolutionizes stereolithography by mitigating overcuring in 3D-printed microstructures. Through precise control of fluid mechanics, iCLIP enables high-resolution fabrication of complex microfluidic devices with enhanced design freedom, overcoming historical limitations in negative space resolution.' />
+        <div className="william__science-buttons">
+          <ShowcasePopup 
+            buttonText='Paper' 
+            pdf={iCLIP2paper} />
+        </div>
       </div>
 
       <div>
@@ -51,7 +57,7 @@ const Science = () => {
         <div className="william__science-buttons">
           <ShowcasePopup 
             buttonText='Paper' 
-            pdf={KLAPposter}/>
+            pdf={iCLIP1paper}/>
         </div>
       </div>
 

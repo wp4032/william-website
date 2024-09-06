@@ -54,6 +54,18 @@
     color: #ffffff;
 }
 
+.william__skills-container h3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+
 .william__skills-logos {
     display: flex;
     flex-wrap: wrap;
