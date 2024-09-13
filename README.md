@@ -1,4 +1,4 @@
-# William Pan - Personal Website
+# William Pan - Personal Website [OUTDATED]
 
 William Pan's personal website (william-pan.com). 
 
